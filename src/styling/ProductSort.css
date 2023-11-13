@@ -1,0 +1,35 @@
+.ProductSort-frame1{
+    padding-left: 10px;
+    padding-top: -5px;
+}
+.ProductSort-frame1 button{
+   border: none;
+   border-bottom: solid black;
+   margin-bottom: 10px;
+}
+.ProductSort-frame1 button:hover{
+  color: blue;
+  border-color: blue;
+}
+@media only screen and (max-width: 768px) {
+.ProductSort-frame1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-size: 40px;
+}
+.ProductSort-frame1 button{
+    width: 180px;
+
+    margin-left: 30px;
+    height: 50px;
+    font-size: 20px;
+    
+}
+
+.price2{
+    
+   position: relative;
+   top: 40px;
+}
+}

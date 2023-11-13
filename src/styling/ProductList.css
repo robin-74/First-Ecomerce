@@ -1,0 +1,26 @@
+.frame1{
+    display: flex;
+  flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    max-width: 60rem;
+    margin: 20px;
+}
+.product-frame1{
+    
+    margin: 8px;
+    
+    
+
+}
+@media only screen and (max-width: 768px) {
+.product-frame1{
+    margin: 0px;
+    padding: 0px;
+}
+.frame1{
+    padding: 0px;
+    margin: 0px;
+}
+
+}

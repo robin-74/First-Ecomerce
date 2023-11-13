@@ -1,0 +1,19 @@
+.navbar{
+    padding-top: 200px;
+    background-color: rgba(186, 179, 179, 0.112);
+}
+.Carousel{
+    max-width: auto;
+    max-height: auto;
+}
+
+@media screen and (max-width: 1040px) { 
+
+    .navbar{
+        padding-top: 100px;
+    }
+    .Carousel{
+        padding-right: 1900px;
+    }
+
+}

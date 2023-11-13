@@ -1,0 +1,40 @@
+*{
+    background-color: rgb(248, 247, 247);
+}
+
+.primary {
+    display: flex;
+   flex-direction: column;
+    cursor: fixed;
+   
+    transition: 0.4s;
+  }
+  .primary:active{
+   transform: scale(0.7);
+  }
+  
+  .carousel-inner {
+    display: flex;
+    
+    transition: transform 3s ease;
+  }
+  
+  
+  .carousel-item {
+    flex: 0 0 100%;
+  }
+  
+  .prev {
+    transform: translateX(-100%);
+  }
+  
+  .next {
+    transform: translateX(100%);
+  }
+  
+  .active {
+    transform: translateX(0);
+    margin-left: 400px;
+    transition: margin-left 3s ease;
+  }
+  

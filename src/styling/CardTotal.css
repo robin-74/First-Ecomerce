@@ -1,0 +1,31 @@
+.tit-1{
+    font-size: 20px;
+
+}
+*{
+    color: rgb(43, 42, 42);
+}
+.cardt-frame1 button{
+    background-color:whitesmoke;
+    border-radius: 5px;
+    width: 60%;
+    background-color: black;
+    color: white;
+  
+}
+.cardt-frame1 button:hover{
+    background-color:rgba(198, 191, 191, 0.315);
+    transform: scale(1.1);
+    transition: 2s;
+    border-radius: 5px;
+    width: 70%;
+    border: none;
+    color: green;
+  
+}
+.cardt-frame1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

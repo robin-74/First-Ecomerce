@@ -1,0 +1,40 @@
+.card-f {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 100% of the viewport height */
+  }
+  
+  .card-nav {
+    background-color: #333;  
+    color: white;
+    padding: 0px;
+    margin-top: 140px;
+  }
+  
+  .card-frame {
+    display: flex;
+    flex: 1; /* Take remaining height */
+  }
+  
+  .card-product {
+    flex: 0.7; /* 70% width */
+    background-color: #eee; /* Example background color */
+  }
+  
+  .card-total {
+    margin-top: 30px;
+    flex: 0.3; /* 30% width */
+   position:sticky;
+   margin-bottom: 20px;
+
+  }
+  @media (max-width: 768px) {
+    .card-frame {
+      flex-direction: column; /* Change back to column for mobile */
+    }
+  
+    .card-total {
+      flex: 1; /* Take full width in mobile view */
+    }
+  }
+  

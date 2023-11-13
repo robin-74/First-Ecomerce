@@ -1,0 +1,118 @@
+h1 {
+    margin-left: 30px;
+  }
+  *{
+    background-color: whitesmoke;
+  }
+  input{
+    border-radius: 5px;
+    border-width: 0px;
+ 
+  }
+  input:active{
+    border-color: whitesmoke;
+  }
+  .cartcard{
+    
+    padding-right: 10px;
+  }
+  
+  
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+  }
+  
+  .Rate-nav {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    padding: 5px;
+    color: wheat;
+  }
+  
+  .burger {
+    cursor: pointer;
+    color: white;
+  }
+  
+  .head {
+    background-color: transparent;
+    position: absolute;
+  }
+  
+  .nav-type {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-type p {
+    margin: 10px 0;
+    border-top: 2px solid gray;
+  }
+  
+  .burger {
+    cursor: pointer;
+  }
+  
+  .head {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .head.menu-open {
+    background-color: black; /* Change this to the desired color */
+  }
+  
+  .nav-type1 {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    
+  }
+  
+  .nav-type1 p {
+    margin: 10px;
+    border-top: solid 2px;
+  }
+  
+  .nav-type1:hover p {
+    cursor: pointer;
+  }
+  .hithubicon{
+    color: black;
+  }
+  
+  @media screen and (max-width: 1040px) {
+    h1 {
+      margin: 2px;
+    }
+    * {
+      font-size: 20px;
+    }
+    .burger {
+      position: relative;
+      right: 0;
+      color: black;
+    }
+    .nav-type {
+      display: flex;
+    }
+    .nav-type1 {
+      margin-left: 900px;
+      margin-top: -50px;
+    }
+    .nav-type {
+      background-color: white;
+    }
+    .nav-type:hover p {
+      cursor: pointer;
+    }
+  }
+  
