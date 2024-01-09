@@ -9,8 +9,10 @@ import ProductT from '../components/ProductT'
 import Footer from '../components/Footer'
 import Carousel from '../components/Carousel'
 
-
+import { useGetProductsQuery } from '../thunk/ProductApi'
 function HomePage() {
+  const {data } = useGetProductsQuery();
+  console.log(data)
   return (
     <div >
             <header   >

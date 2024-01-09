@@ -2,6 +2,9 @@
     padding-top: 200px;
     background-color: rgba(186, 179, 179, 0.112);
 }
+.navbar2{
+    background-color: red;
+}
 .Carousel{
     max-width: auto;
     max-height: auto;

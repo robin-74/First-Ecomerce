@@ -1,13 +1,16 @@
 
 import { createSlice } from '@reduxjs/toolkit'
 import { DataP } from '../../data/data';
-
+import { useGetProductsQuery } from '../../thunk/ProductApi';
+ 
 const initialState = {
+    
     products:DataP,
     cathegory: '' , 
     Search: '',
     price: null,
-    cart: []
+    cart: [],
+    ProductList: [],
 };
 
  const ProductSlice = createSlice({
@@ -55,7 +58,9 @@ const initialState = {
   
 
 
-    }
+    },
+    extraReducers: (builder) => {
+         } ,
 
     
  })
@@ -63,3 +68,4 @@ const initialState = {
     SortDesc , SortDesc2  , SetSearch  , setAmount , setCart  , setDelete
  } = ProductSlice.actions
  export default ProductSlice.reducer;
+ 

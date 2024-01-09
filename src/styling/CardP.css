@@ -9,6 +9,52 @@
     border-color: rgb(171, 167, 161);
     transform: scale(1.08);
 }
+.Cardp-frame1 {
+    position: relative;
+    transition: transform 2s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .Cardp-frame1.jump {
+    animation: jumpAnimation 2s ease-in-out;
+  }
+  
+  @keyframes jumpAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    25% {
+      transform: translateY(-50%);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .Cardp-frame1.hide {
+    opacity: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .Cardp-frame1 button:hover {
+    background-color: white;
+    border-color: rgb(171, 167, 161);
+    transform: scale(1.04);
+  }
+  
+  .Cardp-frame1 button:active {
+    background-color: white;
+    border-color: rgb(171, 167, 161);
+    transform: scale(1.08);
+  }
 @media (max-width: 768px) {
 
  .frameframeframe1{

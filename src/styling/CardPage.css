@@ -30,9 +30,13 @@
   }
   @media (max-width: 768px) {
     .card-frame {
+      display: flex;
       flex-direction: column; /* Change back to column for mobile */
     }
-  
+    .card-product{
+      display: flex;
+      flex-direction: column;
+    }
     .card-total {
       flex: 1; /* Take full width in mobile view */
     }

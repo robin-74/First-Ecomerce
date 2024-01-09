@@ -24,9 +24,11 @@ h1 {
     align-items: center;
     flex-wrap: wrap;
     background-color: whitesmoke;
+     
   }
   
   .Rate-nav {
+    transition: 3s;
     display: flex;
     background-color: black;
     justify-content: center;
@@ -75,6 +77,13 @@ h1 {
     flex-direction: row;
     padding: 10px;
     
+  }
+  .nav-type1 p:hover{
+    
+    font-weight: 100px;
+    border-color:  red;
+    margin-top: 20px;
+    transform: scale(1.2);
   }
   
   .nav-type1 p {

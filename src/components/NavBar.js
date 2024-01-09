@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
   const [ InputUser , setInputUser]  = useState('');
+  const [backgroundColor, setBackgroundColor] = useState('black');
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -20,10 +21,20 @@ function NavBar() {
   const dispatch = useDispatch();
   useEffect(() => {dispatch(SetSearch(InputUser))} , [InputUser])
   const data = useSelector((state) => state.Products.cart)
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      const colors = ['black', 'grey', 'rgb(113, 31, 31)'];
+      const currentIndex = colors.indexOf(backgroundColor);
+      const nextIndex = (currentIndex + 1) % colors.length;
+      setBackgroundColor(colors[nextIndex]);
+    }, 3000);
+
+    return () => clearInterval(intervalId); //  
+  }, [backgroundColor]);
 
   return (
     <div className='head'>
-      <div className='Rate-nav'>Leb Rate $:99 000L.L</div>
+      <div className='Rate-nav' style={{ backgroundColor }}>Leb Rate $:99 000L.L</div>
       <div className='header-nav'>
         <span className='burger' onClick={toggleMenu}>
           <CiMenuBurger className='burger' />
